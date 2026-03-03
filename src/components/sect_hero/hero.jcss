@@ -1,0 +1,97 @@
+ /* Hero Section */
+const hero = chain
+	.padding('120px 5% 80px')
+    .bg('linear-gradient(135deg, #667eea 0%, #764ba2 100%)')
+    .color('white')
+    .textAlign('center')
+    .block('.hero');
+
+const hero_content = chain
+	.maxWidth('800px')
+    .margin('0 auto')
+    .block('.hero-content');
+
+const hero_h1 = chain
+	.fontSize('3.5rem')
+    .marginBottom('1rem')
+    .animation('fadeInUp 0.8s ease')
+    .block('.hero h1');
+
+const hero_tagline = chain
+	.fontSize('1.3rem')
+    .opacity('0.95')
+    .marginBottom('2rem')
+    .animation('fadeInUp 1s ease')
+    .block('.hero .tagline');
+
+const stats = chain
+	.display('flex')
+    .justifyContent('center')
+    .gap('3rem')
+    .margin('2rem 0')
+    .animation('fadeInUp 1.2s ease')
+    .block('.stats');
+
+const stat_item = chain
+	.textAlign('center')
+    .block('.stat-item');
+
+const stat_number = chain
+	.fontSize('2.5rem')
+    .fontWeight('700')
+    .display('block')
+    .block('.stat-number');
+
+const stat_label = chain
+    .fontSize('0.9rem')
+    .opacity('0.9')
+    .textTransform('uppercase')
+    .letterSpacing('1px')
+    .block('.stat-label');
+
+const cta_buttons = chain
+    .display('flex')
+    .gap('1rem')
+    .justifyContent('center')
+    .animation('fadeInUp 1.4s ease')
+    .block('.cta-buttons');    
+
+const cta_primary_secondary = chain
+    .padding('1rem 2rem')
+    .borderRadius('30px')
+    .textDecoration('none')
+    .fontWeight('600')
+    .transition('transform 0.3s, box-shadow 0.3s')
+    .block('.cta-primary, .cta-secondary');
+
+const cta_primary = chain
+    .bg('white')
+    .color('#667eea')
+    .block('.cta-primary');
+
+const cta_secondary = chain
+    .bg('transparent')
+    .color('white')
+    .border('2px solid white')
+    .block('.cta-secondary');
+
+const cta_prim_sec_hover = chain
+    .transform('translateY(-2px)')
+    .boxShadow('0 10px 25px rgba(0,0,0,0.2)')
+    .block('.cta-primary:hover, .cta-secondary:hover');
+
+module.exports = {
+    hero,
+    hero_content,
+    hero_h1,
+    hero_tagline,
+    stats,
+    stat_item,
+    stat_number,
+    stat_label,
+    cta_buttons,
+    cta_primary_secondary,
+    cta_primary,
+    cta_secondary,
+    cta_prim_sec_hover
+}

@@ -1,0 +1,63 @@
+/* Code Example Section */
+const code_example = chain
+    .padding('80px 5%')
+    .bg('white')
+    .block('.code-example');
+
+const example_container = chain        
+    .maxWidth('1500px')
+    .margin('0 auto')
+    .display('grid')
+    .gridTemplateColumns('1fr 1fr')
+    .gap('2rem')
+    .bg('#1e293b')
+    .borderRadius('10px')
+    .overflow('hidden')
+    .boxShadow('0 20px 30px rgba(0,0,0,0.2)')
+    .block('.example-container');
+
+const code_block = chain
+    .padding('2rem')
+    .bg('#0f172a')
+    .color('#e2e8f0')
+    .fontFamily("'Fira Code', monospace")
+    .fontSize('0.9rem')
+    .lineHeight('1.5')
+    .block('.code-block');
+
+const code_block_pre = chain     
+    .margin('0')
+    .whiteSpace('pre-wrap')
+    .block('.code-block pre');
+
+const output_block = chain
+    .padding('2rem')
+    .bg('#1e293b')
+    .color('white')
+    .block('.output-block');
+
+const output_block_h3 = chain       
+    .color('#94a3b8')
+    .marginBottom('1rem')
+    .textTransform('uppercase')
+    .letterSpacing('1px')
+    .fontSize('0.9rem')
+    .block('.output-block h3');
+
+const css_output = chain 
+    .bg('#0f172a')
+    .padding('1rem')
+    .borderRadius('5px')
+    .color('#a5f3fc')
+    .fontFamily("'Fira Code', monospace")
+    .block('.css-output');
+
+module.exports = {
+    code_example,
+    example_container,
+    code_block,
+    code_block_pre,
+    output_block,
+    output_block_h3,
+    css_output
+};

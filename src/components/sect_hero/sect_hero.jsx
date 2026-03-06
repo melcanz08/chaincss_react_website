@@ -6,7 +6,7 @@ const Sect_hero = () => {
 	        <div className="hero-content">
 	            <h1>Write CSS with JavaScript</h1>
 	            <p className="tagline">chaincss - A simple, elegant JavaScript to CSS transpiler with fluent API</p>
-	            <p className="tagline">The performance of vanilla CSS with the power of JS</p>
+	            <p className="tagline">"The performance of vanilla CSS with the power of JS"</p>
 	            <div className="stats">
 	                <div className="stat-item">
 	                    <span id="downloads" className="stat-number">

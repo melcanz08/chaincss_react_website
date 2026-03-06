@@ -1,17 +1,18 @@
+
 /* Features Section */
-const features = chain
+const features = $()
     .padding('80px 5%')
-    .bg('#f8fafc')
+    .background('#f8fafc')
     .block('.features');
 
-const section_title = chain
+const section_title = $()
     .textAlign('center')
     .fontSize('2.5rem')
     .marginBottom('3rem')
     .color('#1e293b')
     .block('.section-title');
 
-const festures_grid = chain
+const festures_grid = $()
     .display('grid')
     .gridTemplateColumns('repeat(auto-fit, minmax(300px, 1fr))')
     .gap('2rem')
@@ -19,30 +20,30 @@ const festures_grid = chain
     .margin('0 auto')
     .block('.features-grid');
 
-const features_card = chain
-    .bg('white')
+const features_card = $()
+    .background('white')
     .padding('2rem')
     .borderRadius('10px')
     .boxShadow('0 5px 15px rgba(0,0,0,0.05)')
     .transition('transform 0.3s')
     .block('.feature-card');
 
-const features_card_hover = chain
+const features_card_hover = $()
     .transform('translateY(-5px)')
     .boxShadow('0 10px 25px rgba(102, 126, 234, 0.2)')
     .block('.feature-card:hover');
 
-const features_icon = chain
+const features_icon = $()
     .fontSize('2.5rem')
     .marginBottom('1rem')
     .block('.feature-icon');
 
-const features_card_h3 = chain
+const features_card_h3 = $()
     .marginBottom('0.5rem')
     .color('#1e293b')
     .block('.feature-card h3');
 
-const features_card_p = chain
+const features_card_p = $()
     .color('#64748b')
     .block('.feature-card p');
 

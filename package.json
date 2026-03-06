@@ -11,7 +11,8 @@
     "css:watch": "nodemon --watch chaincss --ext js,css,jcss --exec 'node chaincss/processor.cjs'",
     "start": "concurrently \"npm run dev\" \"npm run css:watch\"",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "update": "git add . && git commit -m 'Update site' && git push origin main && npm run deploy"
   },
   "dependencies": {
     "@melcanz85/chaincss": "^1.6.3",

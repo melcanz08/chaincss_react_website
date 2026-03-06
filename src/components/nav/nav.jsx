@@ -1,9 +1,7 @@
-
-
 const Navbar = () => {
-
+  
 return (
-    <nav className="navbar">
+    <nav className="navbar" >
         <div className="nav-container">
             <div className="logo">
                 <a href="/index.html" >Chaincss</a>

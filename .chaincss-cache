@@ -1,0 +1,156 @@
+{
+  "version": "1.0.0",
+  "timestamp": 1773641218509,
+  "atomicClasses": [
+    [
+      "margin:0 auto",
+      {
+        "className": "_co8get",
+        "prop": "margin",
+        "value": "0 auto",
+        "usageCount": 3
+      }
+    ],
+    [
+      "textDecoration:none",
+      {
+        "className": "_o5ray3",
+        "prop": "textDecoration",
+        "value": "none",
+        "usageCount": 4
+      }
+    ],
+    [
+      "gap:2rem",
+      {
+        "className": "_sif0l0",
+        "prop": "gap",
+        "value": "2rem",
+        "usageCount": 4
+      }
+    ],
+    [
+      "color:#1e293b",
+      {
+        "className": "_vz9liu",
+        "prop": "color",
+        "value": "#1e293b",
+        "usageCount": 3
+      }
+    ],
+    [
+      "background:#1e293b",
+      {
+        "className": "_5eupkx",
+        "prop": "background",
+        "value": "#1e293b",
+        "usageCount": 5
+      }
+    ],
+    [
+      "fontSize:0.9rem",
+      {
+        "className": "_9ns8sp",
+        "prop": "fontSize",
+        "value": "0.9rem",
+        "usageCount": 5
+      }
+    ],
+    [
+      "color:white",
+      {
+        "className": "_4g4cpe",
+        "prop": "color",
+        "value": "white",
+        "usageCount": 6
+      }
+    ],
+    [
+      "textAlign:center",
+      {
+        "className": "_x23tu1",
+        "prop": "textAlign",
+        "value": "center",
+        "usageCount": 5
+      }
+    ],
+    [
+      "marginBottom:1rem",
+      {
+        "className": "_5fifxm",
+        "prop": "marginBottom",
+        "value": "1rem",
+        "usageCount": 3
+      }
+    ],
+    [
+      "justifyContent:center",
+      {
+        "className": "_7316au",
+        "prop": "justifyContent",
+        "value": "center",
+        "usageCount": 3
+      }
+    ],
+    [
+      "fontSize:2.5rem",
+      {
+        "className": "_alsxmz",
+        "prop": "fontSize",
+        "value": "2.5rem",
+        "usageCount": 3
+      }
+    ],
+    [
+      "padding:80px 5%",
+      {
+        "className": "_f120qv",
+        "prop": "padding",
+        "value": "80px 5%",
+        "usageCount": 3
+      }
+    ],
+    [
+      "padding:2rem",
+      {
+        "className": "_beuay9",
+        "prop": "padding",
+        "value": "2rem",
+        "usageCount": 3
+      }
+    ],
+    [
+      "borderRadius:10px",
+      {
+        "className": "_detgg3",
+        "prop": "borderRadius",
+        "value": "10px",
+        "usageCount": 3
+      }
+    ],
+    [
+      "fontFamily:'Fira Code', monospace",
+      {
+        "className": "_il6x43",
+        "prop": "fontFamily",
+        "value": "'Fira Code', monospace",
+        "usageCount": 3
+      }
+    ],
+    [
+      "background:white",
+      {
+        "className": "_ggulzx",
+        "prop": "background",
+        "value": "white",
+        "usageCount": 3
+      }
+    ]
+  ],
+  "stats": {
+    "totalStyles": 4509,
+    "atomicStyles": 16,
+    "standardStyles": 0,
+    "uniqueProperties": 106
+  }
+}

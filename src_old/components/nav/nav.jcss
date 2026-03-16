@@ -1,0 +1,69 @@
+/* Header/Navigation */
+const navbar = $()
+    .background('rgba(255, 255, 255, 0.95)')
+    .backdropFilter('blur(10px)')
+    .padding('1rem 5%')
+    .position('fixed')
+    .width('100%')
+    .top('0')
+    .zIndex('1000')
+    .boxShadow('0 2px 20px rgba(0,0,0,0.1)')
+    .block('.navbar');
+
+const nav_container = $()
+    .maxWidth('1200px')
+    .margin('0 auto')
+    .display('flex')
+    .justifyContent('space-between')
+    .alignItems('center')
+    .block('.nav-container');
+
+const logo = $()
+    .fontSize('1.8rem')
+    .fontWeight('700')
+    .background('linear-gradient(135deg, #667eea, #764ba2)')
+    .backgroundClip('text')
+    .textFillColor('transparent')
+    .letterSpacing('-0.5px')
+    .block('.logo a');
+
+const navLinks = $()
+    .display('flex')
+    .gap('2rem')
+    .alignItems('center')
+    .block('.nav-links');
+
+const navLinks_a = $()
+    .textDecoration('none')
+    .color('#1e293b')
+    .fontWeight('500')
+    .transition('color 0.3s')
+    .block('.nav-links a');
+
+const navLinks_aHover = $()
+    .color('#667eea')
+    .block('.nav-links a:hover');
+
+const npm_badge = $()
+    .background('#1e293b')
+    .color('white !important')
+    .padding('0.5rem 1rem')
+    .borderRadius('20px')
+    .fontSize('0.9rem')
+    .block('.npm-badge');
+
+const npm_badge_hover = $()
+    .background('#667eea !important')
+    .color('white !important')
+    .block('.npm-badge:hover');
+
+module.exports = {
+    navbar,
+    nav_container,
+    logo,
+    navLinks,
+    navLinks_a,
+    navLinks_aHover,
+    npm_badge,
+    npm_badge_hover
+};

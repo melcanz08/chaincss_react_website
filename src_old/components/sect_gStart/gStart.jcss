@@ -1,0 +1,44 @@
+
+/* Installation Section */
+const installation = $()
+    .padding('80px 5%')
+    .background('#f1f5f9')
+    .textAlign('center')
+    .block('.installation');
+
+const install_command = $()
+    .background('#1e293b')
+    .color('white')
+    .padding('1.5rem')
+    .borderRadius('10px')
+    .fontFamily("'Fira Code', monospace")
+    .fontSize('1.2rem')
+    .maxWidth('500px')
+    .margin('2rem auto')
+    .position('relative')
+    .cursor('pointer')
+    .transition('transform 0.3s')
+    .block('.install-command');
+
+const install_command_hover = $()
+    .transform('scale(1.02)')
+    .block('.install-command:hover');
+
+const install_command_after = $() 
+    .content("'📋'")
+    .position('absolute')
+    .right('1rem')
+    .opacity('0.5')
+    .block('.install-command::after');
+
+const install_command_hover_after = $()
+    .opacity('1')
+    .block('.install-command:hover::after');
+
+module.exports = {
+    installation,
+    install_command,
+    install_command_hover,
+    install_command_after,
+    install_command_hover_after
+};

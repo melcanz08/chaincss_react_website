@@ -1,0 +1,108 @@
+import { useState } from 'react';
+
+const Sect_runtime_demo = () => {
+  const [activeTab, setActiveTab] = useState('code');
+  
+  return (
+    <section className="runtime-demo-section" style={{ padding: '80px 5%', background: 'white' }}>
+      <h2 className="section-title">🎯 Runtime Mode Preview</h2>
+      
+      <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+        <div style={{ background: '#f8fafc', borderRadius: '1rem', overflow: 'hidden' }}>
+          
+          {/* Tabs */}
+          <div style={{ display: 'flex', borderBottom: '2px solid #e2e8f0' }}>
+            <button
+              onClick={() => setActiveTab('code')}
+              style={{
+                padding: '1rem 2rem',
+                background: activeTab === 'code' ? 'white' : 'transparent',
+                border: 'none',
+                borderBottom: activeTab === 'code' ? '2px solid #667eea' : 'none',
+                cursor: 'pointer',
+                fontWeight: activeTab === 'code' ? '600' : '400'
+              }}
+            >
+              Code Example
+            </button>
+            <button
+              onClick={() => setActiveTab('preview')}
+              style={{
+                padding: '1rem 2rem',
+                background: activeTab === 'preview' ? 'white' : 'transparent',
+                border: 'none',
+                borderBottom: activeTab === 'preview' ? '2px solid #667eea' : 'none',
+                cursor: 'pointer',
+                fontWeight: activeTab === 'preview' ? '600' : '400'
+              }}
+            >
+              Live Preview (Demo)
+            </button>
+          </div>
+          
+          {/* Content */}
+          <div style={{ padding: '2rem', background: 'white' }}>
+            {activeTab === 'code' ? (
+              <div>
+                <h3 style={{ marginBottom: '1rem' }}>Runtime Hook Example</h3>
+                <pre style={{ background: '#1e293b', color: '#a5f3fc', padding: '1.5rem', borderRadius: '0.5rem', overflow: 'auto' }}>
+{`import { useChainStyles } from '@melcanz85/chaincss';
+
+function DynamicButton({ variant }) {
+  const styles = useChainStyles({
+    button: () => $()
+      .backgroundColor(
+        variant === 'primary' ? '#667eea' : '#48bb78'
+      )
+      .color('white')
+      .padding('0.75rem 1.5rem')
+      .borderRadius('0.375rem')
+      .hover()
+        .transform('scale(1.05)')
+      .block()
+  });
+  
+  return <button className={styles.button}>Click me</button>;
+}`}
+                </pre>
+                <p style={{ marginTop: '1rem', color: '#64748b' }}>
+                  ✨ Styles update based on props • 🧹 Automatic cleanup • ⚡ Same fluent API
+                </p>
+              </div>
+            ) : (
+              <div style={{ textAlign: 'center' }}>
+                <div style={{ marginBottom: '2rem' }}>
+                  <span style={{ 
+                    display: 'inline-block',
+                    background: '#667eea',
+                    color: 'white',
+                    padding: '0.75rem 1.5rem',
+                    borderRadius: '0.375rem',
+                    fontSize: '1.1rem'
+                  }}>
+                    Interactive Demo Button
+                  </span>
+                </div>
+                <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', marginBottom: '2rem' }}>
+                  <button style={{ background: '#e2e8f0', border: 'none', padding: '0.5rem 1rem', borderRadius: '0.25rem', cursor: 'pointer' }}>Primary</button>
+                  <button style={{ background: '#e2e8f0', border: 'none', padding: '0.5rem 1rem', borderRadius: '0.25rem', cursor: 'pointer' }}>Success</button>
+                </div>
+                <p style={{ fontSize: '0.9rem', color: '#94a3b8' }}>
+                  ⚠️ Full runtime demo coming soon - currently showing static preview
+                </p>
+              </div>
+            )}
+          </div>
+        </div>
+        
+        {/* Note about runtime */}
+        <div style={{ marginTop: '2rem', padding: '1rem', background: '#f1f5f9', borderRadius: '0.5rem', fontSize: '0.9rem' }}>
+          <strong>Note:</strong> Runtime hooks are being optimized for better browser compatibility. 
+          The concept works today in React projects - see the <a href="https://github.com/melcanz08/chaincss#readme" target="_blank">documentation</a>.
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Sect_runtime_demo;

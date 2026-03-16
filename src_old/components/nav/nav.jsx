@@ -4,7 +4,7 @@ return (
     <nav className="navbar" >
         <div className="nav-container">
             <div className="logo">
-                <a href="" >Chaincss</a>
+                <a href="https://melcanz08.github.io/chaincss_react_website/" >Chaincss</a>
             </div>
             <div className="nav-links">
                 <a href="#features">Features</a>

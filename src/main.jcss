@@ -5,12 +5,12 @@
 @>
 
 <@
-	const nav = get('./src/components/nav/nav.jcss');
-	const hero = get('./src/components/sect_hero/hero.jcss');
-	const feature = get('./src/components/sect_feature/feature.jcss');
-	const example = get('./src/components/sect_example/example.jcss');
-	const gstart = get('./src/components/sect_gStart/gStart.jcss');
-	const footer = get('./src/components/footer/footer.jcss');
+	const nav = get('./components/nav/nav.jcss');
+	const hero = get('./components/sect_hero/hero.jcss');
+	const feature = get('./components/sect_feature/feature.jcss');
+	const example = get('./components/sect_example/example.jcss');
+	const gstart = get('./components/sect_gStart/gStart.jcss');
+	const footer = get('./components/footer/footer.jcss');
 
 	const merged = Object.assign({},nav,hero,feature,example,gstart,footer);
 

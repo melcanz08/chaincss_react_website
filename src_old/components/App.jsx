@@ -4,9 +4,6 @@ import Sect_feature from "./sect_feature/sect_feature";
 import Sect_example from "./sect_example/sect_example";
 import Sect_gStart from "./sect_gStart/sect_gStart";
 import Footer from "./footer/footer";
-import Sect_dual_mode from './sect_dual_mode/sect_dual_mode';
-import Sect_runtime_demo from './sect_runtime_demo/sect_runtime_demo';
-
 
 function App() {
  
@@ -14,9 +11,7 @@ function App() {
     <>
       <Navbar />
       <Sect_hero />
-      <Sect_dual_mode /> 
       <Sect_feature />
-      <Sect_runtime_demo />
       <Sect_example />
       <Sect_gStart />
       <Footer />
@@ -25,3 +20,4 @@ function App() {
 }
 
 export default App
+

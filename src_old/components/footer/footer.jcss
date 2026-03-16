@@ -1,0 +1,37 @@
+/* Footer */
+const footer = $() 
+    .background('#1e293b')
+    .color('white')
+    .padding('3rem 5%')
+    .textAlign('center')
+    .block('.footer');
+
+const footer_links = $() 
+    .display('flex')
+    .justifyContent('center')
+    .gap('2rem')
+    .marginBottom('2rem')
+    .block('.footer-links');
+
+const footer_links_a = $() 
+    .color('#94a3b8')
+    .textDecoration('none')
+    .transition('color 0.3s')
+    .block('.footer-links a');
+
+const footer_links_a_hover = $() 
+    .color('white')
+    .block('.footer-links a:hover');
+
+const copyright = $() 
+    .color('#64748b')
+    .fontSize('0.9rem')
+    .block('.copyright');
+
+module.exports = {
+    footer,
+    footer_links,
+    footer_links_a,
+    footer_links_a_hover,
+    copyright
+};

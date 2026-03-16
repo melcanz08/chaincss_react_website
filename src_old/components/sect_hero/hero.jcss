@@ -1,7 +1,7 @@
  /* Hero Section */
 const hero = $()
 	.padding('120px 5% 80px')
-    .background('linear-gradient(135deg, #667eea 0%, #764ba2 100%)')
+    .bg('linear-gradient(135deg, #667eea 0%, #764ba2 100%)')
     .color('white')
     .textAlign('center')
     .block('.hero');
@@ -65,12 +65,12 @@ const cta_primary_secondary = $()
     .block('.cta-primary, .cta-secondary');
 
 const cta_primary = $()
-    .background('white')
+    .bg('white')
     .color('#667eea')
     .block('.cta-primary');
 
 const cta_secondary = $()
-    .background('transparent')
+    .bg('transparent')
     .color('white')
     .border('2px solid white')
     .block('.cta-secondary');

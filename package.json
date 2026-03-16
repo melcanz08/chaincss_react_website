@@ -1,38 +1,29 @@
 {
-  "name": "chaincss2",
+  "name": "ccss_reactjs_site",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
+    "dev": "concurrently \"npx @melcanz85/chaincss ./src/main.jcss ./src/style --watch\" \"npx vite\"",
+    "build": "npx chaincss ./src/main.jcss ./src/style && vite build",
     "preview": "vite preview",
-    "css:watch": "nodemon --watch chaincss --ext js,css,jcss --exec 'node chaincss/processor.cjs'",
-    "start": "concurrently \"npm run dev\" \"npm run css:watch\"",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "update": "git add . && git commit -m 'Update site' && git push origin main && npm run deploy"
   },
-  "dependencies": {
-    "@melcanz85/chaincss": "^1.6.3",
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0"
-  },
   "devDependencies": {
-    "@eslint/js": "^9.39.1",
-    "@types/react": "^19.2.7",
-    "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^5.1.1",
-    "babel-plugin-react-compiler": "^1.0.0",
-    "caniuse-db": "^1.0.30001775",
+    "@vitejs/plugin-react": "^4.7.0",
     "concurrently": "^9.2.1",
-    "eslint": "^9.39.1",
-    "eslint-plugin-react-hooks": "^7.0.1",
-    "eslint-plugin-react-refresh": "^0.4.24",
     "gh-pages": "^6.3.0",
-    "globals": "^16.5.0",
-    "nodemon": "^3.1.14",
     "vite": "^7.3.1"
+  },
+  "dependencies": {
+    "@melcanz85/chaincss": "file:../chaincss",
+    "autoprefixer": "^10.4.27",
+    "browserslist": "^4.28.1",
+    "caniuse-db": "^1.0.30001778",
+    "postcss": "^8.5.8",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
   }
 }
